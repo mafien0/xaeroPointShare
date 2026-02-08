@@ -1,29 +1,35 @@
 {
-  "schemaVersion": 1,
-  "id": "xaeropointshare",
-  "version": "${version}",
-  "name": "xaeroPointShare",
-  "description": "",
-  "authors": [],
-  "contact": {},
-  "license": "MIT",
-  "icon": "assets/xaeropointshare/icon.png",
-  "environment": "client",
-  "entrypoints": {
-    "client": [
-      "cc.mafien0.xaeropointshare.client.XaeropointshareClient"
-    ],
-    "main": [
-      "cc.mafien0.xaeropointshare.Xaeropointshare"
-    ]
-  },
-  "mixins": [
-    "xaeropointshare.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "fabric-language-kotlin": ">=${kotlin_loader_version}",
-    "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
-  }
+	"schemaVersion": 1,
+	"id": "xaeropointshare",
+	"version": "${version}",
+	"name": "Xaero PointShare",
+	"description": "Xaero's minimap waypoint sharing mod.",
+	"authors": [
+		"mafien0"
+	],
+	"contact": {
+		"homepage": "https://github.com/mafien0/xaeroPointShare",
+		"sources": "https://github.com/mafien0/xaeroPointShare"
+	},
+	"license": "MIT",
+	"icon": "assets/xaeropointshare/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "cc.mafien0.XaeroPointShare",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"xaeropointshare.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
 }
