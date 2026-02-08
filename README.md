@@ -1,5 +1,5 @@
 # Xaero PointShare
-Simple fabric mod to changes xaero's minimap waypoint sharing functionality
+Simple fabric mod to change xaero's minimap waypoint sharing functionality
 
 ## Feautures:
 - When sharing a waypoint, it no longer sends it in chat, but just copies
