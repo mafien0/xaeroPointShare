@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "xaeropointshare",
+  "version": "${version}",
+  "name": "xaeroPointShare",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/xaeropointshare/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cc.mafien0.xaeropointshare.client.XaeropointshareClient"
+    ],
+    "main": [
+      "cc.mafien0.xaeropointshare.Xaeropointshare"
+    ]
+  },
+  "mixins": [
+    "xaeropointshare.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
